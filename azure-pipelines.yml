@@ -20,6 +20,7 @@ steps:
     inputs:
       command: 'publish'  
       projects: './backend'  
-      arguments: '--configuration Release --output C:\Users\erene\OneDrive\Masaüstü\PatikaPublish'  
+      arguments: '--configuration Release --output C:\Users\erene\OneDrive\Masaüstü\PatikaPublish' 
+      zipAfterPublish: false
 
 
