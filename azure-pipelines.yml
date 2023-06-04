@@ -12,11 +12,6 @@
 pool: Patika
   
 
-steps:
-  - task: DotNetCoreCLI@2
-    inputs:
-      command: 'build' 
-      projects: '**/*.csproj' 
-      arguments: '--configuration Release'
+
 
 
