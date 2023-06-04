@@ -22,5 +22,11 @@ steps:
       projects: './backend'  
       arguments: '--configuration Release --output C:\Users\erene\OneDrive\Masaüstü\PatikaPublish' 
       zipAfterPublish: false
-
+  - task: Docker@2
+    inputs:
+      containerRegistry: 'dockerhuberen'
+      repository: 'erenengin/backend'
+      command: 'build'
+      Dockerfile: './backend/dockerfile-pipeline'
+      buildContext: 'C:\Users\erene\OneDrive\Masaüstü\PatikaPublish\backend'
 
