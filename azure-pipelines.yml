@@ -27,6 +27,6 @@ steps:
       containerRegistry: 'dockerhuberen'
       repository: 'erenengin/backend'
       command: 'build'
-      Dockerfile: './backend/dockerfile-pipeline'
+      Dockerfile: '.\backend\dockerfile-pipeline'
       buildContext: 'C:\Users\erene\OneDrive\Masaüstü\PatikaPublish\backend'
 
