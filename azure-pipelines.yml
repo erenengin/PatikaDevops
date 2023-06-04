@@ -9,12 +9,10 @@ pool: Patika
   
 
 steps:
+  - task: DotNetCoreCLI@2
+    inputs:
+      command: 'build' 
+      projects: '**/*.csproj' 
+      arguments: '--configuration Release'
 
 
-- task: PowerShell@2
-  inputs:
-    targetType: 'inline'
-    script: |
-      # Write your PowerShell commands here.
-      
-      Write-Host "Hello World"
